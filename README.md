@@ -21,14 +21,14 @@ Pin4 is for built-in led.
 
 **Upload**  
 Required USB to TTL Serial Converter to program the module. Refer[3] for connection between the the Serial converter and ESP32 module.  
-Using arduino, upload the code [3]  
-Enter programimng  mode by grounding GPI00 and press reset  
-Go to Tools > Board and select ESP32 Wrover Module  
-Go to Tools > Port and select the COM port the ESP32 is connected to  
-In Tools > Partition Scheme, select “Huge APP (3MB No OTA)“  
-Press the ESP32-CAM on-board RESET button  
-Then, click the upload button to upload the code.  
-Once upload done, disconnect GPIO0 from ground and press reset  
+Using arduino, upload the code as stated in [3]  
+&nbsp;&nbsp;&nbsp;Enter programimng  mode by grounding GPI00 and press reset  
+&nbsp;&nbsp;&nbsp;Go to Tools > Board and select ESP32 Wrover Module  
+&nbsp;&nbsp;&nbsp;Go to Tools > Port and select the COM port the ESP32 is connected to  
+&nbsp;&nbsp;&nbsp;In Tools > Partition Scheme, select “Huge APP (3MB No OTA)“  
+&nbsp;&nbsp;&nbsp;Press the ESP32-CAM on-board RESET button  
+&nbsp;&nbsp;&nbsp;Then, click the upload button to upload the code.  
+&nbsp;&nbsp;&nbsp;Once upload done, disconnect GPIO0 from ground and press reset  
 
 
 
