@@ -33,12 +33,12 @@ const int MA2 = 16;
 const int MB1 = 1;
 const int MB2 = 3;
 
+const int LedCh=1;
 const int L1Ch = 5;
 const int L2Ch = 6;
 const int R1Ch = 7;
 const int R2Ch = 8;
-const int Ch0 = 9;
-const int Ch1 = 10;
+
 
 void startCameraServer();
 
