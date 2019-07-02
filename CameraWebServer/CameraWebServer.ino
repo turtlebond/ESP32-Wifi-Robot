@@ -28,10 +28,10 @@ WebSocketsServer webSocket(82);
 
 const int LED_BUILTIN = 4; 
 // motor outputs
-const int MA1 = 0;
-const int MA2 = 16;
-const int MB1 = 1;
-const int MB2 = 3;
+const int MA1 = 12;
+const int MA2 = 13;
+const int MB1 = 14;
+const int MB2 = 15;
 
 const int LedCh=1;
 const int L1Ch = 5;
