@@ -15,7 +15,7 @@ Battery
 
 
 **Connections**  
-ESP32-CAMERA pin0,1,3 and 16 are set as PWM and connected to L298N motor driver.   
+ESP32-CAMERA pin12,13,14 and 15 are set as PWM and connected to L298N motor driver.   
 Pin4 is for built-in led.    
 
 
