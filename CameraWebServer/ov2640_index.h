@@ -83,7 +83,7 @@ canvas#stream{
     <div id="navBottom" class="sidenav" style="bottom:0;z-index: 2;">
 		<a id="toggle-stream" class="button" type="button" style="color:white; text-decoration:none;">Start Stream</a>
 		<a id="off" class="button off" type="button" onclick="shutdown()" style="">OFF</a>
-		<a id="light" class="button light" type="button" onclick="handleHeadlightClick()" style="transition: background 0.4s;">LIGHT</a>
+		<!--a id="light" class="button light" type="button" onclick="handleHeadlightClick()" style="transition: background 0.4s;">LIGHT></a-->
 	</div>
 
         <script>
