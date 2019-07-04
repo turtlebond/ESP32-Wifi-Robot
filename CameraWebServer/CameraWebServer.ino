@@ -71,8 +71,16 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t payloa
           Serial.println("Going to sleep now");
           esp_deep_sleep_start();
         }
-
-      
+        /*
+        else if (strstr(cmd, "light")) {
+          if(val==1) {
+            ledcWrite(LedCh, 20);
+          }
+          else {
+              ledcWrite(LedCh, 0);
+          }
+        }
+        */
         else if (strstr(cmd, "pos")) {
          //val:leftmotor
          //val2:rightmotor
