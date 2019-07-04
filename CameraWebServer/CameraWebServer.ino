@@ -26,7 +26,6 @@ unsigned char ip_flag = 0x11;
 
 WebSocketsServer webSocket(82);
 
-const int LED_BUILTIN = 4; 
 // motor outputs
 const int MA1 = 12;
 const int MA2 = 13;
@@ -126,9 +125,6 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t payloa
   }
 }
 
-volatile uint8_t websock_num = 0, info_available = 0, output_ready = 0;
-char info_buffer[80];
-
 void setup() {
   Serial.begin(115200);
   Serial.setDebugOutput(true);
@@ -197,23 +193,16 @@ void setup() {
   gpio_config_t configG;
   configG.pin_bit_mask = GPIO_OUTPUT_PIN_SEL;
   configG.mode = GPIO_MODE_OUTPUT; 
-  configG.pull_up_en = GPIO_PULLUP_DISABLE;
-  configG.pull_down_en = GPIO_PULLDOWN_DISABLE;
   configG.intr_type = GPIO_INTR_DISABLE;
   gpio_config(&configG);
 
     
-
-  ledcSetup(LedCh, 5000, 8);
 
   ledcSetup(L1Ch, 5000, 8);
   ledcSetup(L2Ch, 5000, 8);
   ledcSetup(R1Ch, 5000, 8);
   ledcSetup(R2Ch, 5000, 8);
  
-
-  ledcAttachPin(LED_BUILTIN, LedCh);
-
   ledcAttachPin(MA1, L1Ch);
   ledcAttachPin(MA2, L2Ch);
   ledcAttachPin(MB1, R1Ch);
