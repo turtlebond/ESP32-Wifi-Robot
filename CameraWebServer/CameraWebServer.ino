@@ -32,7 +32,6 @@ const int MA2 = 13;
 const int MB1 = 14;
 const int MB2 = 15;
 
-const int LedCh=1;
 const int L1Ch = 5;
 const int L2Ch = 6;
 const int R1Ch = 7;
@@ -73,14 +72,7 @@ void webSocketEvent(uint8_t num, WStype_t type, uint8_t * payload, size_t payloa
           esp_deep_sleep_start();
         }
 
-        else if (strstr(cmd, "light")) {
-          if(val==1) {
-            ledcWrite(LedCh, 20);
-          }
-          else {
-              ledcWrite(LedCh, 0);
-          }
-        }
+      
         else if (strstr(cmd, "pos")) {
          //val:leftmotor
          //val2:rightmotor
