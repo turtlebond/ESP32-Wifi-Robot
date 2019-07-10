@@ -198,10 +198,10 @@ void setup() {
 
     
 
-  ledcSetup(L1Ch, 5000, 8);
-  ledcSetup(L2Ch, 5000, 8);
-  ledcSetup(R1Ch, 5000, 8);
-  ledcSetup(R2Ch, 5000, 8);
+  ledcSetup(L1Ch, 490, 8);
+  ledcSetup(L2Ch, 490, 8);
+  ledcSetup(R1Ch, 490, 8);
+  ledcSetup(R2Ch, 490, 8);
  
   ledcAttachPin(MA1, L1Ch);
   ledcAttachPin(MA2, L2Ch);
