@@ -1,7 +1,7 @@
 # ESP32-Wifi-Robot
 
 **Introduction**  
-This project utilize esp32 camera module with OV2640 to contol a robot thru wifi. This work is based on project in [1]. Esp32 module is used as wifi access point, websocket server and http server. L293N module is employed to control the dc motors. Direction and speed is controlled with left and right motors.
+This project utilize esp32 camera module with OV2640 to contol a robot thru wifi. This work is based on project in [1]. Esp32 module is used as wifi access point, websocket server and http server. L293N module is employed to control the dc motors. Direction and speed is controlled with 2 motor. 1 motor is used for speed and another is used for direction. 
 Once a client is connected to esp32 module, using address 192.168.4.1 in a web-browser the robot can be maneuvered.  
 Codes from [2] was used to set the webpage and websocket server. Codes from arduino esp32 camera webserver example was used to set the OV2640 camera and stream it. Video is set as VGA (640x480). 
 Web also include drop down menu fot select colors to set RGB LED.
