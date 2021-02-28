@@ -5,18 +5,8 @@ This project utilize esp32 camera module with OV2640 to contol a robot thru wifi
 Once a client is connected to esp32 module, using address 192.168.4.1 in a web-browser the robot can be maneuvered.  
 Codes from [2] was used to set the webpage and websocket server. Codes from arduino esp32 camera webserver example was used to set the OV2640 camera and stream it. Video is set as VGA (640x480). 
 
-
-**Parts**  
-ESP32 camera + OV2640  
-L9110 Motor driver  
-2 dc motor  
-Robot chassis  
-Battery  
-
-
 **Connections**  
-ESP32-CAMERA pin12,13,14 and 15 are set as PWM and connected to L9110 motor driver.   
-Pin4 is for built-in led.    
+ESP32-CAMERA pin12,13,14 and 15 are set as PWM and connected to motor driver.   
 
 required libraries before compiling:
 - arduinoJson5.13(https://downloads.arduino.cc/libraries/github.com/bblanchon/ArduinoJson-5.13.3.zip)
